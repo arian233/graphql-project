@@ -8,7 +8,7 @@ function InfoType() {
 
     return (
         <Stack>
-            <Typography variant="h1" component="h2">
+            <Typography variant="h3" component="h2">
                 SpaceX Information Page:
             </Typography>
 

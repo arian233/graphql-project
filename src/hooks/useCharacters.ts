@@ -4,7 +4,6 @@ const GET_CHARACTERS = gql`
   query GetSpaceMission($limit: Int){
   launchesPast (limit: $limit) {
     mission_name
-    launch_date_local
     launch_site {
       site_name_long
     }
@@ -13,7 +12,7 @@ const GET_CHARACTERS = gql`
 `
 
 export const useCharacters = () => {
-  const limit: any = 10
+  const limit: any = 100
   const { error, loading, data } = useQuery(GET_CHARACTERS, { variables: { limit }})
 
   return {
