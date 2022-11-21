@@ -3,6 +3,7 @@ import { useQuery, gql } from '@apollo/client'
 const GET_CHARACTERS = gql`
   query GetSpaceMission($limit: Int){
   launchesPast (limit: $limit) {
+    id
     mission_name
     launch_site {
       site_name_long
